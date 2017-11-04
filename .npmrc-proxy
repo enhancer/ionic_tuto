@@ -1,0 +1,6 @@
+// mettre à la racine du profil sous le nom ".npmrc"
+https-proxy=http://domaine%5Cmatricule:pass@adresseipproxy:port
+proxy=http://domaine%5Cmatricule:pass@adresseipproxy:port
+
+registry=http://registry.npmjs.org/
+strict-ssl = false

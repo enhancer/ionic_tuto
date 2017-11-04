@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Test First API
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
+    <!-- API -->
+    <ion-card *ngFor="let article of news.articles">
+      <img src="{{article.urlToImage}}"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{article.title}}
+          </ion-card-title>
+        <p>
+          {{article.description}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
