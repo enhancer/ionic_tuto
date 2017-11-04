@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     Test First Appli
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+
+
+  <!-- Boutons -->
+  <button ion-button color="light" clear (tap)="alertAction()">Boutton Console</button>
+  <button ion-button clear (tap)="showAlert()">Bouton pop up</button>
+  <button ion-button color="secondary" clear>Secondary Clear</button>
+  <button ion-button color="danger" clear>Danger Clear</button>
+  <button ion-button color="dark" clear>Dark Clear</button>
+
+  <!-- Formulaire -->
+  <ion-list>
+    
+      <ion-item>
+        <ion-label floating>Nom</ion-label>
+        <ion-input type="text" [(ngModel)] = "nom"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Prenom</ion-label>
+        <ion-input type="text" [(ngModel)] = "prenom"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Age</ion-label>
+        <ion-input type="number" [(ngModel)] = "age"></ion-input>
+      </ion-item>
+    
+      <button id="validateButton" ion-button round (tap)="showDetails()">Valider</button>
+    </ion-list>
+
+
+    <!-- API -->
+    <ion-card *ngFor="let article of news.articles">
+      <img src="{{article.urlToImage}}"/>
+      <ion-card-content>
+        <ion-card-title>
+          {{article.title}}
+          </ion-card-title>
+        <p>
+          {{article.description}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+
+</ion-content>
