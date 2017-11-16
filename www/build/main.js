@@ -42,8 +42,8 @@ webpackEmptyAsyncContext.id = 149;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(40);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__details_details__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_newsapi_global_model__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__newsapi_newsapi__ = __webpack_require__(269);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_newsapi_global_model__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__newsapi_newsapi__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -93,12 +93,11 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Test First Appli\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n\n\n  <!-- Boutons -->\n  <button ion-button color="light" clear (tap)="alertAction()">Boutton Console</button>\n  <button ion-button clear (tap)="showAlert()">Bouton pop up</button>\n  <button ion-button color="secondary" clear (tap)="showAPI()">Bouton API</button>\n  <button ion-button color="danger" clear>Danger Clear</button>\n  <button ion-button color="dark" clear>Dark Clear</button>\n\n  <!-- Formulaire -->\n  <ion-list>\n    \n      <ion-item>\n        <ion-label floating>Nom</ion-label>\n        <ion-input type="text" [(ngModel)] = "nom"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>Prenom</ion-label>\n        <ion-input type="text" [(ngModel)] = "prenom"></ion-input>\n      </ion-item>\n\n      <ion-item>\n        <ion-label floating>Age</ion-label>\n        <ion-input type="number" [(ngModel)] = "age"></ion-input>\n      </ion-item>\n    \n      <button id="validateButton" ion-button round (tap)="showDetails()">Valider</button>\n    </ion-list>\n\n\n    <!-- API -->\n    <ion-card *ngFor="let article of news.articles">\n      <img src="{{article.urlToImage}}"/>\n      <ion-card-content>\n        <ion-card-title>\n          {{article.title}}\n          </ion-card-title>\n        <p>\n          {{article.description}}\n        </p>\n      </ion-card-content>\n    </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n     Test First Appli\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  The world is your oyster.\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n\n  </p>\n\n\n\n\n\n  <!-- Boutons -->\n\n  <button ion-button color="light" clear (tap)="alertAction()">Boutton Console</button>\n\n  <button ion-button clear (tap)="showAlert()">Bouton pop up</button>\n\n  <button ion-button color="secondary" clear (tap)="showAPI()">Bouton API</button>\n\n  <button ion-button color="danger" clear>Danger Clear</button>\n\n  <button ion-button color="dark" clear>Dark Clear</button>\n\n\n\n  <!-- Formulaire -->\n\n  <ion-list>\n\n    \n\n      <ion-item>\n\n        <ion-label floating>Nom</ion-label>\n\n        <ion-input type="text" [(ngModel)] = "nom"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>Prenom</ion-label>\n\n        <ion-input type="text" [(ngModel)] = "prenom"></ion-input>\n\n      </ion-item>\n\n\n\n      <ion-item>\n\n        <ion-label floating>Age</ion-label>\n\n        <ion-input type="number" [(ngModel)] = "age"></ion-input>\n\n      </ion-item>\n\n    \n\n      <button id="validateButton" ion-button round (tap)="showDetails()">Valider</button>\n\n    </ion-list>\n\n\n\n\n\n    <!-- API -->\n\n    <ion-card *ngFor="let article of news.articles">\n\n      <img src="{{article.urlToImage}}"/>\n\n      <ion-card-content>\n\n        <ion-card-title>\n\n          {{article.title}}\n\n          </ion-card-title>\n\n        <p>\n\n          {{article.description}}\n\n        </p>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\home\home.html"*/
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
 ], HomePage);
 
-var _a, _b;
 //# sourceMappingURL=home.js.map
 
 /***/ }),
@@ -137,7 +136,7 @@ var DetailsPage = (function () {
 }());
 DetailsPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-details',template:/*ion-inline-start:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\details\details.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Detail Page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div *ngIf="prenom && nom && age"  id="panel-info">\n    <p>Bonjour , {{prenom}} {{nom}}, {{age}} ans</p>\n\n    <p>{{(age < 18 ) ? \'Vous etes mineur\' : \'Vous etes majeur\'}}</p>\n  </div>\n\n  <div *ngIf="!prenom || !nom || !age" id="panel-error">\n\n    <p>ERREUR , il manque des infos</p>\n\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\details\details.html"*/
+        selector: 'page-details',template:/*ion-inline-start:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\details\details.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Detail Page\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <div *ngIf="prenom && nom && age"  id="panel-info">\n    <p>Bonjour , {{prenom}} {{nom}}, {{age}} ans</p>\n\n    <p>{{(age < 18 ) ? \'Vous etes mineur\' : \'Vous etes majeur\'}}</p>\n  </div>\n\n  <div *ngIf="!prenom || !nom || !age" id="panel-error">\n\n    <p>ERREUR , il manque des infos</p>\n\n  </div>\n\n</ion-content>\n'/*ion-inline-end:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\details\details.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]])
 ], DetailsPage);
@@ -150,12 +149,80 @@ DetailsPage = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsApiGlobal; });
+var NewsApiGlobal = (function () {
+    function NewsApiGlobal() {
+    }
+    return NewsApiGlobal;
+}());
+
+//# sourceMappingURL=newsapi-global.model.js.map
+
+/***/ }),
+
+/***/ 197:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsapiPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_newsapi_global_model__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__ = __webpack_require__(198);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+var NewsapiPage = (function () {
+    function NewsapiPage(newsApiService) {
+        this.newsApiService = newsApiService;
+        this.news = new __WEBPACK_IMPORTED_MODULE_1__models_newsapi_global_model__["a" /* NewsApiGlobal */]();
+        console.log("Hello World");
+        this.getArticles(null);
+        console.log("this.news");
+    }
+    // Chargement des articles
+    NewsapiPage.prototype.getArticles = function (refresher) {
+        var _this = this;
+        this.newsApiService.getArticles()
+            .then(function (newsFetched) {
+            _this.news = newsFetched;
+            console.log(_this.news);
+            // Si la variable refresher est null alors on ne fait rien
+            (refresher) ? refresher.complete() : null;
+            console.log('Données récupérées depuis le serveur !');
+        });
+    };
+    return NewsapiPage;
+}());
+NewsapiPage = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+        selector: 'page-newsapi',template:/*ion-inline-start:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\newsapi\newsapi.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title>\n\n     Test First API\n\n    </ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  The world is your oyster.\n\n  <p>\n\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n\n  </p>\n\n\n\n    <!-- API -->\n\n    <ion-card *ngFor="let article of news.articles">\n\n      <img src="{{article.urlToImage}}"/>\n\n      <ion-card-content>\n\n        <ion-card-title>\n\n          {{article.title}}\n\n          </ion-card-title>\n\n        <p>\n\n          {{article.description}}\n\n        </p>\n\n      </ion-card-content>\n\n    </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"F:\chris\cours\wamp\www\ionic\grafikart\src\pages\newsapi\newsapi.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__["a" /* NewsApiService */]])
+], NewsapiPage);
+
+//# sourceMappingURL=newsapi.js.map
+
+/***/ }),
+
+/***/ 198:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsApiService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__ = __webpack_require__(267);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_add_operator_toPromise__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(268);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__ = __webpack_require__(269);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_map__);
 /*
 * Un exemple d'implmentation d'un service au sein d'angular
@@ -200,13 +267,13 @@ NewsApiService = __decorate([
 
 /***/ }),
 
-/***/ 197:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(216);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(218);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -214,7 +281,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 216:
+/***/ 218:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -225,11 +292,11 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(192);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_http__ = __webpack_require__(193);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(266);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_details_details__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_newsapi_newsapi__ = __webpack_require__(269);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_newsapi_service__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_newsapi_newsapi__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_newsapi_service__ = __webpack_require__(198);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -289,7 +356,7 @@ AppModule = __decorate([
 
 /***/ }),
 
-/***/ 264:
+/***/ 266:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -326,83 +393,14 @@ var MyApp = (function () {
     return MyApp;
 }());
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"C:\CAT_USERDATA\ionic\ionic_tuto\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"C:\CAT_USERDATA\ionic\ionic_tuto\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"F:\chris\cours\wamp\www\ionic\grafikart\src\app\app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"F:\chris\cours\wamp\www\ionic\grafikart\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
 
 //# sourceMappingURL=app.component.js.map
 
-/***/ }),
-
-/***/ 265:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsApiGlobal; });
-var NewsApiGlobal = (function () {
-    function NewsApiGlobal() {
-    }
-    return NewsApiGlobal;
-}());
-
-//# sourceMappingURL=newsapi-global.model.js.map
-
-/***/ }),
-
-/***/ 269:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NewsapiPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__models_newsapi_global_model__ = __webpack_require__(265);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__ = __webpack_require__(196);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-var NewsapiPage = (function () {
-    function NewsapiPage(newsApiService) {
-        this.newsApiService = newsApiService;
-        this.news = new __WEBPACK_IMPORTED_MODULE_1__models_newsapi_global_model__["a" /* NewsApiGlobal */]();
-        console.log("Hello World");
-        this.getArticles(null);
-        console.log("this.news");
-    }
-    // Chargement des articles
-    NewsapiPage.prototype.getArticles = function (refresher) {
-        var _this = this;
-        this.newsApiService.getArticles()
-            .then(function (newsFetched) {
-            _this.news = newsFetched;
-            console.log(_this.news);
-            // Si la variable refresher est null alors on ne fait rien
-            (refresher) ? refresher.complete() : null;
-            console.log('Données récupérées depuis le serveur !');
-        });
-    };
-    return NewsapiPage;
-}());
-NewsapiPage = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-newsapi',template:/*ion-inline-start:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\newsapi\newsapi.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n     Test First API\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  The world is your oyster.\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.\n  </p>\n\n    <!-- API -->\n    <ion-card *ngFor="let article of news.articles">\n      <img src="{{article.urlToImage}}"/>\n      <ion-card-content>\n        <ion-card-title>\n          {{article.title}}\n          </ion-card-title>\n        <p>\n          {{article.description}}\n        </p>\n      </ion-card-content>\n    </ion-card>\n\n</ion-content>\n'/*ion-inline-end:"C:\CAT_USERDATA\ionic\ionic_tuto\src\pages\newsapi\newsapi.html"*/
-    }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__["a" /* NewsApiService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_newsapi_service__["a" /* NewsApiService */]) === "function" && _a || Object])
-], NewsapiPage);
-
-var _a;
-//# sourceMappingURL=newsapi.js.map
-
 /***/ })
 
-},[197]);
+},[199]);
 //# sourceMappingURL=main.js.map
