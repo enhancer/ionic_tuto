@@ -37,10 +37,11 @@ const DATABASE_FILE_NAME : string = 'db.db';
         private createTable():void{
             this.db.executeSql('CREATE TABLE IF NOT EXISTS `MOVIES` ( `idMovies` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `name` TEXT, `eval` INTEGER, `desc` TEXT, `categoryId` INTEGER )', {})
             .then(() => { 
-                        console.log('table movie crée'))
-                        db.executeSql('CREATE TABLE IF NOT EXISTS `Categories` ( `idCategorie` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL )', {})
+                        console.log('table movie crée');
+                        this.db.executeSql('CREATE TABLE IF NOT EXISTS `Categories` ( `idCategorie` INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, `name` TEXT NOT NULL )', {})
                         .then(() => console.log('table category crée'))
-                        .catch(e => console.log(e));}
+                        .catch(e => console.log(e));
+                    })
             .catch(e => console.log(e));
         }
 }
